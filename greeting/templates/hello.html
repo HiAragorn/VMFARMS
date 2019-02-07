@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block hello%}
+
+
+<div class="jumbotron">
+    <p>Hello {{name}}</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'main'%}" role="button">Back to the main page!</a>
+</div>
+
+{% endblock%}

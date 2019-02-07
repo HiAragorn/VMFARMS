@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block mainpage %}
+
+<form action="{% url 'hello'%}">
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">
+            <h1>Please enter your name:</h1>
+        </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" cols="20" rows="5" name="name"></textarea><br />
+        <input type="submit" value="Enter" />
+    </div>
+</form>
+
+{% endblock %}
